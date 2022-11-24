@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "153542510638",
+    "project_id": "fitpocket-c16c7",
+    "storage_bucket": "fitpocket-c16c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153542510638:android:ac8fa0804e415c551e77bf",
+        "android_client_info": {
+          "package_name": "com.miniproject.fitpocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153542510638-4rroaao0jej3rdkmaeeudg4l3ajj0icf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjPfy2Pp4J_zQffGf4nxut5pRytPt3ZF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153542510638-4rroaao0jej3rdkmaeeudg4l3ajj0icf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
