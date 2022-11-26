@@ -61,7 +61,7 @@ class dashboardCard extends StatelessWidget {
                             ),
                           ),
                           // this is for the pause button
-                          Align(x
+                          Align(
                             alignment: Alignment.center,
                             child: Container(
                               height: 30,
