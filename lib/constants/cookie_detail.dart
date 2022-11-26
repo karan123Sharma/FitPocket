@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'Bottom_bar.dart';
 
 class CookieDetail extends StatelessWidget {
@@ -107,9 +108,11 @@ class CookieDetail extends StatelessWidget {
             )
           ]
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {},
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.of(context).pushNamed('/home');
+      },
         backgroundColor: Color(0xFFF17532),
-        child: Icon(Icons.fastfood),
+        child: Icon(MdiIcons.home),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomBar(),

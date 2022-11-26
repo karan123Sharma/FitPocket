@@ -2,6 +2,7 @@ import 'package:fitpocket/Trainers/widgets/category_selector.dart';
 import 'package:fitpocket/Trainers/widgets/favorite_contacts.dart';
 import 'package:fitpocket/Trainers/widgets/recent_chats.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import '../constants/Bottom_bar.dart';
 
 
@@ -39,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Navigator.of(context).pushNamed('/home');
       },
         backgroundColor: Color(0xFFF17532),
-        child: Icon(Icons.fastfood),
+        child: Icon(MdiIcons.home),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomBar(),

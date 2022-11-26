@@ -1,6 +1,7 @@
 import 'package:fitpocket/constants/Full_Body.dart';
 import 'package:fitpocket/constants/HardWorkout.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'Bottom_bar.dart';
 import 'cookie_page.dart';
 
@@ -30,7 +31,7 @@ class Yogapage3 extends State<Yoga_Page3>
         elevation: 0.0,
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color(0xFF545D68)),
+          icon: Icon(MdiIcons.backburger, color: Color(0xFF545D68)),
           onPressed: () {},
         ),
         title: Text('FitPokcet',
@@ -40,7 +41,7 @@ class Yogapage3 extends State<Yoga_Page3>
                 color: Color(0xFF545D68))),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.notifications_none, color: Color(0xFF545D68)),
+            icon: Icon(MdiIcons.notificationClearAll, color: Color(0xFF545D68)),
             onPressed: () {},
           ),
         ],
@@ -85,9 +86,11 @@ class Yogapage3 extends State<Yoga_Page3>
           )
         ],
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {},
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.of(context).pushNamed('/home');
+      },
         backgroundColor: Color(0xFFF17532),
-        child: Icon(Icons.fastfood),
+        child: Icon(MdiIcons.home),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomBar(),

@@ -130,7 +130,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                             letterSpacing: 2.2,
                             color: Colors.black)),
                   ),
-                  RaisedButton(
+                  MaterialButton(
                     onPressed: () {},
                     color: Colors.orange,
                     padding: EdgeInsets.symmetric(horizontal: 50),

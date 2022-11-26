@@ -3,13 +3,17 @@
 import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:fitpocket/Running/dahboard.dart';
 import 'package:fitpocket/Trainers/chat.dart';
 import 'package:fitpocket/Trainers/user_model.dart';
+import 'package:fitpocket/Videos/page/exercise_page.dart';
+import 'package:fitpocket/Videos/page/home_page.dart';
 import 'package:fitpocket/mainpage.dart';
 import 'package:fitpocket/pages/details/details.dart';
 import 'package:fitpocket/pages/home/home.dart';
 import 'package:fitpocket/screen/edit%20Profile.dart';
 import 'package:fitpocket/screen/home_view.dart';
+import 'package:fitpocket/screen/onboarding/home_page.dart';
 import 'package:fitpocket/screen/onboarding/onboarding_page.dart';
 import 'package:fitpocket/screen/onboarding/screen_one.dart';
 import 'package:flutter/material.dart';
@@ -54,6 +58,9 @@ class MyApp extends StatelessWidget {
         '/Yoga3':(context)=>Yoga_Page3(),
         '/Yoga4':(context)=>Yoga_Page4(),
         '/Chat':(context)=>HomeScreen(),
+        '/StepCounter':(context)=>dashboard(),
+        '/Exercise':(context) =>HomePage1(),
+
     },
      initialRoute: '/',
     );

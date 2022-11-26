@@ -152,7 +152,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   ],
                 ),
                 actions: [
-                  FlatButton(
+                  MaterialButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                       },

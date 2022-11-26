@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import 'Bottom_bar.dart';
 import 'cookie_page.dart';
@@ -29,7 +30,7 @@ class Yoga_Page extends StatefulWidget {
         elevation: 0.0,
         centerTitle: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Color(0xFF545D68)),
+          icon: Icon(MdiIcons.backburger, color: Color(0xFF545D68)),
           onPressed: () {},
         ),
         title: Text('FitPokcet',
@@ -39,7 +40,7 @@ class Yoga_Page extends StatefulWidget {
                 color: Color(0xFF545D68))),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.notifications_none, color: Color(0xFF545D68)),
+            icon: Icon(MdiIcons.notificationClearAll, color: Color(0xFF545D68)),
             onPressed: () {},
           ),
         ],
@@ -84,9 +85,11 @@ class Yoga_Page extends StatefulWidget {
           )
         ],
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {},
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.of(context).pushNamed('/home');
+      },
         backgroundColor: Color(0xFFF17532),
-        child: Icon(Icons.fastfood),
+        child: Icon(MdiIcons.home),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomBar(),

@@ -110,7 +110,7 @@ class OnboardingScreenOne extends StatelessWidget {
                 children: [
                   Container(
                     alignment: Alignment.centerRight,
-                    child: FlatButton(
+                    child: MaterialButton(
                       onPressed: () => print('Skip'),
                       child: Text(
                         'Skip',

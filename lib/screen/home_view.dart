@@ -4,6 +4,7 @@ import 'package:fitpocket/core/route/app_route_name.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:fitpocket/screen/mode.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../constants/Bottom_bar.dart';
 
@@ -114,17 +115,19 @@ class _HomeViewState extends State<HomeView> {
                         borderRadius: BorderRadius.circular(40.0),
                       ),
                       child: Center(
-                        child: Icon(
-                          Icons.play_arrow,
-                          size: 40,
-                          color: Colors.white,
+                        child: GestureDetector(
+                          onTap: () { Navigator.of(context).pushReplacementNamed('/StepCounter'); },
+                          child: Icon(
+                            MdiIcons.accountLockOutline,
+                            size: 40,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              Padding(
+              ),  Padding(
                 padding: const EdgeInsets.only(right: 20.0, top: 50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -150,7 +153,7 @@ class _HomeViewState extends State<HomeView> {
                       ],
                     ),
                     Icon(
-                      Icons.filter_alt_outlined,
+                      MdiIcons.seal,
                       size: 40,
                       color: Colors.white,
                     )
@@ -177,7 +180,7 @@ class _HomeViewState extends State<HomeView> {
                           ),
                           border: InputBorder.none,
                           icon: Icon(
-                            Icons.search,
+                            MdiIcons.searchWeb,
                             size: 30,
                             color: Colors.white,
                           ),
@@ -294,10 +297,11 @@ class _HomeViewState extends State<HomeView> {
           ),
         ),
 
+
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {},
         backgroundColor: Color(0xFFF17532),
-        child: Icon(Icons.fastfood),
+        child: Icon(MdiIcons.home),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomBar(),

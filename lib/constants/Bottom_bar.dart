@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class BottomBar extends StatelessWidget {
   @override
@@ -27,12 +28,12 @@ class BottomBar extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-                          Icon(Icons.home, color: Color(0xFFEF7532)),
+                          Icon(MdiIcons.dumbbell, color: Color(0xFFEF7532)),
                 GestureDetector(
                 onTap: (){
         Navigator.of(context).pushNamed('/Chat');
         },
-          child:Icon(Icons.person_outline, color: Color(0xFF676E79))
+          child:Icon(MdiIcons.accountMultipleOutline, color: Color(0xFF676E79))
                 )],
                       )
                   ),
@@ -42,8 +43,11 @@ class BottomBar extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-                          Icon(Icons.search, color: Color(0xFF676E79)),
-                          Icon(Icons.shopping_basket, color: Color(0xFF676E79))
+                          GestureDetector(onTap: (){
+                            Navigator.of(context).pushNamed('/Exercise');
+                          },
+                              child: Icon(MdiIcons.abacus, color: Color(0xFF676E79))),
+                          Icon(MdiIcons.leaf, color: Color(0xFF676E79))
                         ],
                       )
                   ),

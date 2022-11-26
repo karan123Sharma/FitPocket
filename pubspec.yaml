@@ -41,6 +41,13 @@ dependencies:
   animations: ^2.0.7
   google_fonts: ^3.0.1
   introduction_screen: ^3.0.2
+  percent_indicator: ^3.4.0
+  sensors_plus: ^1.2.1
+  shared_preferences: ^2.0.12
+  pedometer: ^3.0.0
+  material_design_icons_flutter: ^4.0.5955
+  fl_chart: ^0.55.2
+  video_player: ^2.4.8
 
 
 
@@ -69,6 +76,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
 
   # To add assets to your application, add an assets section, like this:
   assets:

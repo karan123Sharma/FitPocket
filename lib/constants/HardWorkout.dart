@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'cookie_detail.dart';
 
 class CookiePage2 extends StatelessWidget {
@@ -66,8 +67,8 @@ class CookiePage2 extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             isFavorite
-                                ? Icon(Icons.favorite, color: Color(0xFFEF7532))
-                                : Icon(Icons.favorite_border,
+                                ? Icon(MdiIcons.drag, color: Color(0xFFEF7532))
+                                : Icon(MdiIcons.accountLockOutline,
                                 color: Color(0xFFEF7532))
                           ])),
                   Hero(
@@ -84,7 +85,7 @@ class CookiePage2 extends StatelessWidget {
                       style: TextStyle(
                           color: Color(0xFFCC8053),
                           fontFamily: 'Varela',
-                          fontSize: 14.0)),
+                          fontSize: 11.0)),
                   Text(name,
                       style: TextStyle(
                           color: Color(0xFF575E67),
@@ -92,15 +93,15 @@ class CookiePage2 extends StatelessWidget {
                           fontSize: 14.0)),
                   Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Container(color: Color(0xFFEBEBEB), height: 1.0)),
+                      child: Container(color: Color(0xFFEBEBEB), height: 3.0)),
                   Padding(
                       padding: EdgeInsets.only(left: 5.0, right: 5.0),
                       child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             if (!added) ...[
-                              Icon(Icons.shopping_basket,
-                                  color: Color(0xFFD17E50), size: 12.0),
+                              Icon(MdiIcons.accessPoint,
+                                  color: Color(0xFFD17E50), size: 14.0),
                               Text('Details',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
