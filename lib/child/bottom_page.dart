@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:women_safety_app/Videos/page/home_page.dart';
 import 'package:women_safety_app/child/bottom_screens/add_contacts.dart';
 import 'package:women_safety_app/child/bottom_screens/chat_page.dart';
 import 'package:women_safety_app/child/bottom_screens/child_home_page.dart';
 import 'package:women_safety_app/child/bottom_screens/profile_page.dart';
 import 'package:women_safety_app/child/bottom_screens/review_page.dart';
+
+import '../new/screens/workouts/page/workouts_page.dart';
 
 class BottomPage extends StatefulWidget {
   BottomPage({Key? key}) : super(key: key);
@@ -17,9 +20,9 @@ class _BottomPageState extends State<BottomPage> {
   List<Widget> pages = [
     HomeScreen(),
     AddContactsPage(),
+    HomePage1(),
     ChatPage(),
     ProfilePage(),
-    ReviewPage(),
   ];
   onTapped(int index) {
     setState(() {
@@ -47,7 +50,12 @@ class _BottomPageState extends State<BottomPage> {
                 Icons.contacts,
               )),
           BottomNavigationBarItem(
-              label: 'chats',
+              label: 'Workouts',
+              icon: Icon(
+                Icons.sports_gymnastics,
+              )),
+          BottomNavigationBarItem(
+              label: 'Chat',
               icon: Icon(
                 Icons.chat,
               )),
@@ -55,11 +63,6 @@ class _BottomPageState extends State<BottomPage> {
               label: 'Profile',
               icon: Icon(
                 Icons.person,
-              )),
-          BottomNavigationBarItem(
-              label: 'Reviews',
-              icon: Icon(
-                Icons.reviews,
               ))
         ],
       ),

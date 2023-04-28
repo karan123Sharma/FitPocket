@@ -10,11 +10,18 @@ import 'package:shake/shake.dart';
 import 'package:women_safety_app/child/model/model.dart';
 import 'package:women_safety_app/db/db_services.dart';
 import 'package:women_safety_app/model/contactsm.dart';
+import 'package:women_safety_app/new/screens/start_workout/widget/start_workout_content.dart';
 import 'package:women_safety_app/widgets/home_widgets/CustomCarouel.dart';
 import 'package:women_safety_app/widgets/home_widgets/custom_appBar.dart';
 import 'package:women_safety_app/widgets/home_widgets/emergency.dart';
 import 'package:women_safety_app/widgets/home_widgets/safehome/SafeHome.dart';
 import 'package:women_safety_app/widgets/live_safe.dart';
+
+import '../../new/core/const/color_constants.dart';
+import '../../new/core/const/data_constants.dart';
+import '../../new/core/const/text_constants.dart';
+import '../../new/screens/home/widget/home_exercises_card.dart';
+import '../../new/screens/workout_details_screen/page/workout_details_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -69,6 +76,50 @@ class _HomeScreenState extends State<HomeScreen> {
     return true;
   }
 
+  Widget _createExercisesList(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
+            TextConstants.discoverWorkouts,
+            style: TextStyle(
+              color: ColorConstants.textBlack,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        const SizedBox(height: 15),
+        Container(
+          height: 160,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              const SizedBox(width: 20),
+              WorkoutCard(
+                  color: ColorConstants.cardioColor,
+                  workout: DataConstants.homeWorkouts[0],
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => WorkoutDetailsPage(
+                        workout: DataConstants.workouts[0],
+                      )))),
+              const SizedBox(width: 15),
+              WorkoutCard(
+                  color: ColorConstants.armsColor,
+                  workout: DataConstants.homeWorkouts[1],
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => WorkoutDetailsPage(
+                        workout: DataConstants.workouts[2],
+                      )))),
+              const SizedBox(width: 20),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
   _getCurrentLocation() async {
     final hasPermission = await _handleLocationPermission();
     if (!hasPermission) return;
@@ -136,7 +187,6 @@ void _showDialog(bool num){
             num = false;
             Navigator.pop(context);
             getAndSendSms();
-
           },
             child: Text("No"),),
         ],
@@ -189,13 +239,13 @@ void _showDialog(bool num){
                     CustomCarouel(),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "Emergency",
+                      child: Text("",
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
-                    Emergency(),
+                    _createExercisesList(context),
+                    const SizedBox(height: 15),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
@@ -204,8 +254,9 @@ void _showDialog(bool num){
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
+                    const SizedBox(height: 15),
                     LiveSafe(),
-                    SafeHome(),
+                    const SizedBox(height: 15),
                     Gym(),
                   ],
                 ),

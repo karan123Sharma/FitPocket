@@ -59,11 +59,30 @@ dependencies:
   firebase_storage: ^11.0.16
   cached_network_image: ^3.2.3
   shake: ^2.2.0
+  flutter_bloc: ^8.1.2
+  # line chart
+  fl_chart: ^0.62.0
+  percent_indicator: ^4.2.3
+  dots_indicator: ^2.1.0
+  # URL launcher
+  # Workout Details sliding up panel
   sliding_up_panel: ^2.0.0+1
+  # Video player
+  video_player: ^2.6.1
+  chewie: ^1.4.0
+  # Countdown timer
+  custom_timer: ^0.2.3
+  # Image library
+  # Reminder notification
+  flutter_local_notifications: ^14.0.0
+
+  # Native timezone
+  flutter_native_timezone: ^2.0.0
 
   # flutter_background_service: ^2.4.6
-
-
+  bloc: ^8.1.1
+  circular_countdown_timer: ^0.2.3
+  rflutter_alert: ^2.0.4
 
 
 dev_dependencies:
@@ -91,6 +110,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/images/onboarding/
+    - assets/images/auth/
+    - assets/images/home/
+    - assets/images/exercises/
+    - assets/icons/home/
+    - assets/icons/workouts/
+    - assets/icons/social_networks/
+    - assets/videos/workouts/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -104,13 +131,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  fonts:
+     - family: NotoSansKR
+       fonts:
+         - asset: assets/fonts/NotoSansKR/NotoSansKR-Regular.otf
+         - asset: assets/fonts/NotoSansKR/NotoSansKR-Medium.otf
+           weight: 500
+         - asset: assets/fonts/NotoSansKR/NotoSansKR-Bold.otf
+           weight: 700
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
