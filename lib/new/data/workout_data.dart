@@ -1,4 +1,4 @@
-import 'package:women_safety_app/new/data/exercise_data.dart';
+import 'package:Fitpocket/new/data/exercise_data.dart';
 
 class WorkoutData {
   final String title;

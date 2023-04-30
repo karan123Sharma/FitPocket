@@ -1,10 +1,10 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/path_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/screens/home/page/home_page.dart';
-import 'package:women_safety_app/new/screens/settings/settings_screen.dart';
-import 'package:women_safety_app/new/screens/tab_bar/bloc/tab_bar_bloc.dart';
-import 'package:women_safety_app/new/screens/workouts/page/workouts_page.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/path_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/screens/home/page/home_page.dart';
+import 'package:Fitpocket/new/screens/settings/settings_screen.dart';
+import 'package:Fitpocket/new/screens/tab_bar/bloc/tab_bar_bloc.dart';
+import 'package:Fitpocket/new/screens/workouts/page/workouts_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -13,7 +13,7 @@ class BusStationCard extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              onMapFunction!('Aerobic places near me');
+              onMapFunction!('Gym places near me');
             },
             child: Card(
               elevation: 3,
@@ -32,7 +32,7 @@ class BusStationCard extends StatelessWidget {
               ),
             ),
           ),
-          Text('Aerobic')
+          Text('Gym')
         ],
       ),
     );

@@ -2,9 +2,9 @@ import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:women_safety_app/db/db_services.dart';
-import 'package:women_safety_app/model/contactsm.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:Fitpocket/db/db_services.dart';
+import 'package:Fitpocket/model/contactsm.dart';
+import 'package:Fitpocket/utils/constants.dart';
 
 class ContactsPage extends StatefulWidget {
   const ContactsPage({Key? key}) : super(key: key);

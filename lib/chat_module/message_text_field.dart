@@ -159,7 +159,7 @@ class _MessageTextFieldState extends State<MessageTextField> {
                         },
                         icon: Icon(
                           Icons.add_box_rounded,
-                          color: Colors.pink,
+                          color: Colors.orangeAccent,
                         ))),
               ),
             ),
@@ -173,7 +173,7 @@ class _MessageTextFieldState extends State<MessageTextField> {
                 },
                 child: Icon(
                   Icons.send,
-                  color: Colors.pink,
+                  color: Colors.orangeAccent,
                   size: 30,
                 ),
               ),
@@ -222,7 +222,7 @@ class _MessageTextFieldState extends State<MessageTextField> {
         children: [
           CircleAvatar(
             radius: 30,
-            backgroundColor: Colors.pink,
+            backgroundColor: Colors.orangeAccent,
             child: Icon(icons),
           ),
           Text("$title")

@@ -1,10 +1,10 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/core/service/validation_service.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_button.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_loading.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_text_field.dart';
-import 'package:women_safety_app/new/screens/forgot_password/bloc/forgot_password_bloc.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/core/service/validation_service.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_button.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_loading.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_text_field.dart';
+import 'package:Fitpocket/new/screens/forgot_password/bloc/forgot_password_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

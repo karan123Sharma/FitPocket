@@ -1,8 +1,8 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_button.dart';
-import 'package:women_safety_app/new/screens/reminder/bloc/reminder_bloc.dart';
-import 'package:women_safety_app/new/screens/reminder/widget/reminder_content.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_button.dart';
+import 'package:Fitpocket/new/screens/reminder/bloc/reminder_bloc.dart';
+import 'package:Fitpocket/new/screens/reminder/widget/reminder_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

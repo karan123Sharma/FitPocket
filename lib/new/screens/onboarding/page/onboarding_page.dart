@@ -1,6 +1,6 @@
-import 'package:women_safety_app/new/screens/onboarding/bloc/onboarding_bloc.dart';
-import 'package:women_safety_app/new/screens/onboarding/widget/onboarding_content.dart';
-import 'package:women_safety_app/new/screens/sign_up/page/sign_up_page.dart';
+import 'package:Fitpocket/new/screens/onboarding/bloc/onboarding_bloc.dart';
+import 'package:Fitpocket/new/screens/onboarding/widget/onboarding_content.dart';
+import 'package:Fitpocket/new/screens/sign_up/page/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,15 +1,15 @@
 import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/path_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/core/service/auth_service.dart';
-import 'package:women_safety_app/new/screens/common_widgets/settings_container.dart';
-import 'package:women_safety_app/new/screens/edit_account/edit_account_screen.dart';
-import 'package:women_safety_app/new/screens/reminder/page/reminder_page.dart';
-import 'package:women_safety_app/new/screens/settings/bloc/bloc/settings_bloc.dart';
-import 'package:women_safety_app/new/screens/sign_in/page/sign_in_page.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/path_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/core/service/auth_service.dart';
+import 'package:Fitpocket/new/screens/common_widgets/settings_container.dart';
+import 'package:Fitpocket/new/screens/edit_account/edit_account_screen.dart';
+import 'package:Fitpocket/new/screens/reminder/page/reminder_page.dart';
+import 'package:Fitpocket/new/screens/settings/bloc/bloc/settings_bloc.dart';
+import 'package:Fitpocket/new/screens/sign_in/page/sign_in_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

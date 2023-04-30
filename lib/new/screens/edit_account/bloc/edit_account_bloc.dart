@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:women_safety_app/new/core/service/firebase_storage_service.dart';
-import 'package:women_safety_app/new/core/service/user_service.dart';
+import 'package:Fitpocket/new/core/service/firebase_storage_service.dart';
+import 'package:Fitpocket/new/core/service/user_service.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:meta/meta.dart';
 

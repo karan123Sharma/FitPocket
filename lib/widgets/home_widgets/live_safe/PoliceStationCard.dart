@@ -12,7 +12,7 @@ class PoliceStationCard extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              onMapFunction!('River Rafting near me');
+              onMapFunction!('Swimming near me');
             },
             child: Card(
               elevation: 3,
@@ -31,7 +31,7 @@ class PoliceStationCard extends StatelessWidget {
               ),
             ),
           ),
-          Text('River Rafting')
+          Text('Swimming')
         ],
       ),
     );

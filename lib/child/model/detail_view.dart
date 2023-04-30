@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-import 'package:women_safety_app/child/model/widget/exercise.dart';
+import 'package:Fitpocket/child/model/widget/exercise.dart';
 import '../model/exercise.dart';
 import '../model/work_out.dart';
 import 'detail_view.dart';
@@ -165,7 +165,7 @@ class _DetailViewState extends State<DetailView> {
                       Container(
                         width: double.infinity,
                         decoration: const BoxDecoration(
-                          color: Colors.red,
+                          color: Colors.orangeAccent,
                           borderRadius: BorderRadius.all(
                             Radius.circular(16),
                           ),

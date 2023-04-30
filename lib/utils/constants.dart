@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Color primaryColor = Color(0xfffc3b77);
+Color primaryColor = Colors.orangeAccent;
 
 void goTo(BuildContext context, Widget nextScreen) {
   Navigator.push(

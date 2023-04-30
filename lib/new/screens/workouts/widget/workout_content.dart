@@ -1,7 +1,7 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/data_constants.dart';
-import 'package:women_safety_app/new/data/workout_data.dart';
-import 'package:women_safety_app/new/screens/workouts/widget/workout_card.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/data_constants.dart';
+import 'package:Fitpocket/new/data/workout_data.dart';
+import 'package:Fitpocket/new/screens/workouts/widget/workout_card.dart';
 import 'package:flutter/material.dart';
 
 class WorkoutContent extends StatelessWidget {

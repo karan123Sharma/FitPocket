@@ -8,9 +8,9 @@ List sweetSayings = [
 ];
 
 List<String> articleTitle = [
-  "Pakistani women are inspiring country",
-  "We have to end Violance",
-  "Be a change",
+  "Success is what comes after you stop making excuses",
+  "Train Insane or remain the same",
+  "The pain you feel today will be the strength you feel tomorrow",
   "You are strong"
 ];
 List<String> imageSliders = [

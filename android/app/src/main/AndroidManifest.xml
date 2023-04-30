@@ -9,7 +9,7 @@
 
  
    <application
-        android:label="women_safety_app"
+        android:label="FitPocket"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

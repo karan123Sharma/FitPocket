@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:women_safety_app/new/core/service/user_service.dart';
+import 'package:Fitpocket/new/core/service/user_service.dart';
 
 class FirebaseStorageService {
   FirebaseStorage storage = FirebaseStorage.instance;

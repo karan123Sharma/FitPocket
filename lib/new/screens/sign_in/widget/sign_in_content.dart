@@ -1,10 +1,10 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/core/service/validation_service.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_button.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_loading.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_text_field.dart';
-import 'package:women_safety_app/new/screens/sign_in/bloc/sign_in_bloc.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/core/service/validation_service.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_button.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_loading.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_text_field.dart';
+import 'package:Fitpocket/new/screens/sign_in/bloc/sign_in_bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

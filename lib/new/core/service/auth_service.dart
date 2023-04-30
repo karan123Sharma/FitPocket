@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:women_safety_app/new/core/extensions/exceptions.dart';
+import 'package:Fitpocket/new/core/extensions/exceptions.dart';
 import 'package:flutter/services.dart';
 
 class AuthService {

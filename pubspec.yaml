@@ -1,4 +1,4 @@
-name: women_safety_app
+name: Fitpocket
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -73,7 +73,7 @@ dependencies:
   # Countdown timer
   custom_timer: ^0.2.3
   # Image library
-  # Reminder notification
+#  flutter_launcher_icons: ^0.13.1
   flutter_local_notifications: ^14.0.0
 
   # Native timezone
@@ -83,6 +83,7 @@ dependencies:
   bloc: ^8.1.1
   circular_countdown_timer: ^0.2.3
   rflutter_alert: ^2.0.4
+  get: ^4.6.5
 
 
 dev_dependencies:

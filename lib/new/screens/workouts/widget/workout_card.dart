@@ -1,7 +1,7 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/data/workout_data.dart';
-// import 'package:women_safety_app/new/screens/workouts/bloc/workouts_bloc.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/data/workout_data.dart';
+// import 'package:Fitpocket/new/screens/workouts/bloc/workouts_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:percent_indicator/percent_indicator.dart';

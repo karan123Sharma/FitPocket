@@ -1,5 +1,5 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/path_constants.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/path_constants.dart';
 import 'package:flutter/material.dart';
 
 class SettingsTextField extends StatefulWidget {

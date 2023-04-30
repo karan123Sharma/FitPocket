@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/components/SecondaryButton.dart';
-import 'package:women_safety_app/components/custom_textfield.dart';
+import 'package:Fitpocket/components/PrimaryButton.dart';
+import 'package:Fitpocket/components/SecondaryButton.dart';
+import 'package:Fitpocket/components/custom_textfield.dart';
 
 class ReviewPage extends StatefulWidget {
   @override

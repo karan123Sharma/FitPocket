@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:background_sms/background_sms.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,16 +8,17 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:shake/shake.dart';
-import 'package:women_safety_app/child/model/model.dart';
-import 'package:women_safety_app/db/db_services.dart';
-import 'package:women_safety_app/model/contactsm.dart';
-import 'package:women_safety_app/new/screens/start_workout/widget/start_workout_content.dart';
-import 'package:women_safety_app/widgets/home_widgets/CustomCarouel.dart';
-import 'package:women_safety_app/widgets/home_widgets/custom_appBar.dart';
-import 'package:women_safety_app/widgets/home_widgets/emergency.dart';
-import 'package:women_safety_app/widgets/home_widgets/safehome/SafeHome.dart';
-import 'package:women_safety_app/widgets/live_safe.dart';
+import 'package:Fitpocket/child/model/model.dart';
+import 'package:Fitpocket/db/db_services.dart';
+import 'package:Fitpocket/model/contactsm.dart';
+import 'package:Fitpocket/new/screens/start_workout/widget/start_workout_content.dart';
+import 'package:Fitpocket/widgets/home_widgets/CustomCarouel.dart';
+import 'package:Fitpocket/widgets/home_widgets/custom_appBar.dart';
+import 'package:Fitpocket/widgets/home_widgets/emergency.dart';
+import 'package:Fitpocket/widgets/home_widgets/safehome/SafeHome.dart';
+import 'package:Fitpocket/widgets/live_safe.dart';
 
+import '../../Videos/page/home_page.dart';
 import '../../new/core/const/color_constants.dart';
 import '../../new/core/const/data_constants.dart';
 import '../../new/core/const/text_constants.dart';
@@ -30,6 +32,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   // const HomeScreen({super.key});
+  bool condition = false;
+  int _countdown = 10;
   int qIndex = 0;
   Position? _curentPosition;
   String? _curentAddress;
@@ -173,27 +177,69 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 void _showDialog(bool num){
+    startTimer();
     showDialog(context: context, builder: (context){
       return CupertinoAlertDialog(
         title: Text('Alert'),
-        content: Text('Please Click....'),
+        content: Text('Please Click in.. $_countdown'),
         actions: [
           MaterialButton(onPressed: (){
-            num = true;
+            condition = false;
             Navigator.pop(context);
           },
           child: Text("Yes"),),
           MaterialButton(onPressed: (){
-            num = false;
-            Navigator.pop(context);
+            condition = true;
             getAndSendSms();
+            _countdown = 10;
+            Navigator.pop(context);
           },
             child: Text("No"),),
         ],
       );
     });
 }
+  Widget Dig(){
+    startTimer();
+    return AlertDialog(
+      title: Text('Do you Wanna Continue?'),
+      content: Text('This alert will close in $_countdown seconds.'),
+      actions: [
+        TextButton(
+          onPressed: () {
+            condition = false;
+            Navigator.of(context).pop();
+            getAndSendSms();
+            _countdown = 10;
+          },
+          child: Text('No'),
+        ),
+        TextButton(onPressed: () {
+          condition = true;
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => HomePage1()));
+        }, child: Text("Yes")),
 
+      ],
+
+    );
+  }
+  void startTimer() {
+    Timer.periodic(Duration(seconds: 2), (timer) {
+      setState(() {
+        _countdown--;
+        if (_countdown == 0 && condition == false) {
+          getAndSendSms();
+          timer.cancel();
+          _countdown = 10;
+          Navigator.of(context).pop();
+        }
+        // }
+        // else if()
+
+      });
+    });
+  }
   @override
   void initState() {
     getRandomQuote();
@@ -205,6 +251,8 @@ void _showDialog(bool num){
       onPhoneShake: () {
         bool num = true;
         _showDialog(num);
+        Dig();
+        // _countdown = 10;
         if(num == false){
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(

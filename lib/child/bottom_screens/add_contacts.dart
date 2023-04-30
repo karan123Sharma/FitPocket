@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:women_safety_app/child/bottom_screens/contacts_page.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/db/db_services.dart';
-import 'package:women_safety_app/model/contactsm.dart';
+import 'package:Fitpocket/child/bottom_screens/contacts_page.dart';
+import 'package:Fitpocket/components/PrimaryButton.dart';
+import 'package:Fitpocket/db/db_services.dart';
+import 'package:Fitpocket/model/contactsm.dart';
 
 class AddContactsPage extends StatefulWidget {
   const AddContactsPage({super.key});
@@ -71,7 +71,9 @@ class _AddContactsPageState extends State<AddContactsPage> {
                     if (result == true) {
                       showList();
                     }
-                  }),
+                  }
+
+                  ),
               Expanded(
                 child: ListView.builder(
                   // shrinkWrap: true,
@@ -93,7 +95,7 @@ class _AddContactsPageState extends State<AddContactsPage> {
                                     },
                                     icon: Icon(
                                       Icons.call,
-                                      color: Colors.red,
+                                      color: Colors.orangeAccent,
                                     )),
                                 IconButton(
                                     onPressed: () {
@@ -101,7 +103,7 @@ class _AddContactsPageState extends State<AddContactsPage> {
                                     },
                                     icon: Icon(
                                       Icons.delete,
-                                      color: Colors.red,
+                                      color: Colors.orangeAccent,
                                     )),
                               ],
                             ),

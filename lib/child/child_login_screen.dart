@@ -1,14 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/child/bottom_page.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/components/SecondaryButton.dart';
-import 'package:women_safety_app/components/custom_textfield.dart';
-import 'package:women_safety_app/child/register_child.dart';
-import 'package:women_safety_app/db/share_pref.dart';
-import 'package:women_safety_app/parent/parent_register_screen.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:Fitpocket/child/bottom_page.dart';
+import 'package:Fitpocket/components/PrimaryButton.dart';
+import 'package:Fitpocket/components/SecondaryButton.dart';
+import 'package:Fitpocket/components/custom_textfield.dart';
+import 'package:Fitpocket/child/register_child.dart';
+import 'package:Fitpocket/db/share_pref.dart';
+import 'package:Fitpocket/parent/parent_register_screen.dart';
+import 'package:Fitpocket/utils/constants.dart';
 import '../parent/parent_home_screen.dart';
 import 'model/work_out.dart';
 
@@ -95,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     color: primaryColor),
                               ),
                               Image.asset(
-                                'assets/logo.png',
+                                'assets/logo1.png',
                                 height: 100,
                                 width: 100,
                               ),
@@ -178,11 +178,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             title: 'Register as child',
                             onPressed: () {
                               goTo(context, RegisterChildScreen());
-                            }),
-                        SecondaryButton(
-                            title: 'Register as Parent',
-                            onPressed: () {
-                              goTo(context, RegisterParentScreen());
                             }),
                       ],
                     ),

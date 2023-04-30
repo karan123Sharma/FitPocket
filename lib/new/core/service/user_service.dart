@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:women_safety_app/new/core/extensions/exceptions.dart';
-import 'package:women_safety_app/new/core/service/auth_service.dart';
+import 'package:Fitpocket/new/core/extensions/exceptions.dart';
+import 'package:Fitpocket/new/core/service/auth_service.dart';
 
 class UserService {
   static final FirebaseAuth firebase = FirebaseAuth.instance;

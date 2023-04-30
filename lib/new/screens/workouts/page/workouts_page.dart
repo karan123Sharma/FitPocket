@@ -1,6 +1,6 @@
-import 'package:women_safety_app/new/screens/workout_details_screen/page/workout_details_page.dart';
-import 'package:women_safety_app/new/screens/workouts/bloc/workouts_bloc.dart';
-import 'package:women_safety_app/new/screens/workouts/widget/workout_content.dart';
+import 'package:Fitpocket/new/screens/workout_details_screen/page/workout_details_page.dart';
+import 'package:Fitpocket/new/screens/workouts/bloc/workouts_bloc.dart';
+import 'package:Fitpocket/new/screens/workouts/widget/workout_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

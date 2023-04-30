@@ -8,10 +8,10 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
-import 'package:women_safety_app/child/child_login_screen.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/components/custom_textfield.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:Fitpocket/child/child_login_screen.dart';
+import 'package:Fitpocket/components/PrimaryButton.dart';
+import 'package:Fitpocket/components/custom_textfield.dart';
+import 'package:Fitpocket/utils/constants.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -54,7 +54,7 @@ class _ProfilePageState extends State<ProfilePage> {
       body: isSaving == true
           ? Center(
               child: CircularProgressIndicator(
-              backgroundColor: Colors.pink,
+              backgroundColor: Colors.orangeAccent,
             ))
           : SafeArea(
               child: Padding(

@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:chewie/chewie.dart';
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/data/exercise_data.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/data/exercise_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';

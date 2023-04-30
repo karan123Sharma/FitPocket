@@ -1,4 +1,4 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

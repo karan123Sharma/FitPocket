@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:women_safety_app/new/core/service/auth_service.dart';
-import 'package:women_safety_app/new/core/service/validation_service.dart';
+import 'package:Fitpocket/new/core/service/auth_service.dart';
+import 'package:Fitpocket/new/core/service/validation_service.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 

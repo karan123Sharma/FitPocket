@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/child/child_login_screen.dart';
-import 'package:women_safety_app/model/user_model.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:Fitpocket/child/child_login_screen.dart';
+import 'package:Fitpocket/model/user_model.dart';
+import 'package:Fitpocket/utils/constants.dart';
 import '../components/PrimaryButton.dart';
 import '../components/SecondaryButton.dart';
 import '../components/custom_textfield.dart';
@@ -110,7 +110,7 @@ class _RegisterChildScreenState extends State<RegisterChildScreen> {
                                       color: primaryColor),
                                 ),
                                 Image.asset(
-                                  'assets/logo.png',
+                                  'assets/logo1.png',
                                   height: 100,
                                   width: 100,
                                 ),
@@ -162,22 +162,6 @@ class _RegisterChildScreenState extends State<RegisterChildScreen> {
                                     prefix: Icon(Icons.person),
                                     onsave: (email) {
                                       _formData['cemail'] = email ?? "";
-                                    },
-                                    validate: (email) {
-                                      if (email!.isEmpty ||
-                                          email.length < 3 ||
-                                          !email.contains("@")) {
-                                        return 'enter correct email';
-                                      }
-                                    },
-                                  ),
-                                  CustomTextField(
-                                    hintText: 'enter guardian email',
-                                    textInputAction: TextInputAction.next,
-                                    keyboardtype: TextInputType.emailAddress,
-                                    prefix: Icon(Icons.person),
-                                    onsave: (gemail) {
-                                      _formData['gemail'] = gemail ?? "";
                                     },
                                     validate: (email) {
                                       if (email!.isEmpty ||

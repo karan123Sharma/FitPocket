@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/chat_module/chat_screen.dart';
+import 'package:Fitpocket/chat_module/chat_screen.dart';
 
 import '../../utils/constants.dart';
 
@@ -12,7 +12,7 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.orangeAccent,
         // backgroundColor: Color.fromARGB(255, 250, 163, 192),
         title: Text("SELECT GUARDIAN"),
       ),

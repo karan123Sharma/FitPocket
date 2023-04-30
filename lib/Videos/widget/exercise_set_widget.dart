@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/Timer/DemoApp.dart';
+import 'package:Fitpocket/Timer/DemoApp.dart';
 
 import '../../model/contactsm.dart';
 import '../model/exercise_set.dart';

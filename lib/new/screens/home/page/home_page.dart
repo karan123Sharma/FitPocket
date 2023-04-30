@@ -1,5 +1,5 @@
-import 'package:women_safety_app/new/screens/home/bloc/home_bloc.dart';
-import 'package:women_safety_app/new/screens/home/widget/home_content.dart';
+import 'package:Fitpocket/new/screens/home/bloc/home_bloc.dart';
+import 'package:Fitpocket/new/screens/home/widget/home_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

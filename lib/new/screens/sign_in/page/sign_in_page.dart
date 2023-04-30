@@ -1,8 +1,8 @@
-import 'package:women_safety_app/new/screens/forgot_password/page/forgot_password_page.dart';
-import 'package:women_safety_app/new/screens/sign_in/bloc/sign_in_bloc.dart';
-import 'package:women_safety_app/new/screens/sign_in/widget/sign_in_content.dart';
-import 'package:women_safety_app/new/screens/sign_up/page/sign_up_page.dart';
-import 'package:women_safety_app/new/screens/tab_bar/page/tab_bar_page.dart';
+import 'package:Fitpocket/new/screens/forgot_password/page/forgot_password_page.dart';
+import 'package:Fitpocket/new/screens/sign_in/bloc/sign_in_bloc.dart';
+import 'package:Fitpocket/new/screens/sign_in/widget/sign_in_content.dart';
+import 'package:Fitpocket/new/screens/sign_up/page/sign_up_page.dart';
+import 'package:Fitpocket/new/screens/tab_bar/page/tab_bar_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,12 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/core/service/validation_service.dart';
-import 'package:women_safety_app/new/screens/change_password/bloc/change_password_bloc.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_button.dart';
-import 'package:women_safety_app/new/screens/common_widgets/fitness_loading.dart';
-import 'package:women_safety_app/new/screens/common_widgets/settings_container.dart';
-import 'package:women_safety_app/new/screens/common_widgets/settings_textfield.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/core/service/validation_service.dart';
+import 'package:Fitpocket/new/screens/change_password/bloc/change_password_bloc.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_button.dart';
+import 'package:Fitpocket/new/screens/common_widgets/fitness_loading.dart';
+import 'package:Fitpocket/new/screens/common_widgets/settings_container.dart';
+import 'package:Fitpocket/new/screens/common_widgets/settings_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

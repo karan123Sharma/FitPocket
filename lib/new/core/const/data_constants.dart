@@ -1,8 +1,8 @@
-import 'package:women_safety_app/new/core/const/path_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/data/exercise_data.dart';
-import 'package:women_safety_app/new/data/workout_data.dart';
-import 'package:women_safety_app/new/screens/onboarding/widget/onboarding_tile.dart';
+import 'package:Fitpocket/new/core/const/path_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/data/exercise_data.dart';
+import 'package:Fitpocket/new/data/workout_data.dart';
+import 'package:Fitpocket/new/screens/onboarding/widget/onboarding_tile.dart';
 
 class DataConstants {
   // Onboarding

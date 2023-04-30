@@ -1,7 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/data_constants.dart';
-import 'package:women_safety_app/new/screens/onboarding/bloc/onboarding_bloc.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/data_constants.dart';
+import 'package:Fitpocket/new/screens/onboarding/bloc/onboarding_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';

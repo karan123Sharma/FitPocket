@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:women_safety_app/new/data/workout_data.dart';
+import 'package:Fitpocket/new/data/workout_data.dart';
 import 'package:meta/meta.dart';
 
 part 'workouts_event.dart';

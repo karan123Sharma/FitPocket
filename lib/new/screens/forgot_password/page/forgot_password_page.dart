@@ -1,7 +1,7 @@
-import 'package:women_safety_app/new/core/const/color_constants.dart';
-import 'package:women_safety_app/new/core/const/text_constants.dart';
-import 'package:women_safety_app/new/screens/forgot_password/bloc/forgot_password_bloc.dart';
-import 'package:women_safety_app/new/screens/forgot_password/widget/forgot_password_content.dart';
+import 'package:Fitpocket/new/core/const/color_constants.dart';
+import 'package:Fitpocket/new/core/const/text_constants.dart';
+import 'package:Fitpocket/new/screens/forgot_password/bloc/forgot_password_bloc.dart';
+import 'package:Fitpocket/new/screens/forgot_password/widget/forgot_password_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
