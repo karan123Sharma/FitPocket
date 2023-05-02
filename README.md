@@ -1,4 +1,4 @@
-# women_safety_app
+# A Fitness Application
 
 A new Flutter project.
 
